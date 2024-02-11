@@ -310,13 +310,14 @@ img {
         font-size: 24px;
         color: #4a4a4a;
         letter-spacing: 1px;
-        margin: 20px 0 20px;
+        margin: 85px 0 20px;
     }
 
     &__sub-total {
         font-size: 16px;
         color: #4a4a4a;
         letter-spacing: 1px;
+        margin-bottom: 12px;
     }
 
     &__empty {
@@ -350,7 +351,7 @@ a:active {
 @media (max-width: 600px) {
     .top {
         &-img {
-            background-image: url("top2.jpg");
+            background-image: url("top_beach1.jpg");
             height: 300px;
         }
     }
