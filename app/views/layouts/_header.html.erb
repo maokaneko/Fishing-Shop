@@ -1,8 +1,13 @@
-<nav class="navbar navbar-light bg-light">
+<div class="fixed-top">
+<nav class="navbar navbar-light bg-light border-bottom border-secondary">
   <div class="container">
-    <%= link_to "Techpit Clothes", root_path, class: "navbar-brand" %>
+    <%= link_to root_path, class: "navbar-brand" do %>
+      <%= image_tag "logo.svg" %>
+    <% end %>
+
     <%= link_to carts_path(@cart) do %>
       <i class="fas fa-shopping-cart"></i>
     <% end %>
   </div>
 </nav>
+</div>
