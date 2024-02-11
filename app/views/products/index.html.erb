@@ -3,25 +3,118 @@
   <p class="text-center text-white top-img-text"></p>
 </div>
 
-<div class="container">
-  <div class="top__title text-center">
-    All Products
-  </div>
-  <div class="row">
-    <% @products.each do |product| %>
-      <%= link_to product_path(product), class: "col-lg-4 col-md-6" do %>
-        <div class="card">
-          <%= image_tag product.image, class: "card-img" %>
-          <div class="card-body">
-            <p class="card-title">
-              <%= product.name %>
+   <!-- concept -->
+    <section class="concept" id="concept">
+      <div class="container">
+        <h2>CONCEPT</h2>
+        <div class="cocept_text">
+            <p>TSURINCHUは、沖縄で釣りを楽しんでいる釣りんちゅ（釣り人）にもっと快適に、もっと釣果を上げてもらいたいと思いで誕生した、オンラインショップです。
+              <br>沖縄の独特なフィールドに合わせたロッドやリール、様々な魚種に対応したルアー、暑い日が多い沖縄だからこそ、快適に過ごせるためのウェアなど沖縄の釣りに特化したブランドです。
             </p>
-            <p class="card-text">
-              ¥<%= number_to_delimited(product.price) %>
-            </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- products -->
+    <section class="products" id="products">
+      <div class="container">
+        <h2>PRODUCTS</h2>
+
+        <div class="pr-imgages">
+          <div class="rod">
+            <h3><span>ROD</span></h3>
+            <div class="pr-img">
+              <a href="#"><img src="img/PR_rod.jpg" alt="商品の画像"></a>
+            </div>
+          </div>
+
+          <div class="reel">
+            <h3><span>REEL</span></h3>
+            <div class="pr-img">
+              <a href="#"><img src="img/PR_reel.jpg" alt="商品の画像"></a>
+            </div>
+          </div>
+
+          <div class="lure">
+            <h3><span>LURE</span></h3>
+            <div class="pr-img">
+              <a href="#"><img src="img/PR_lure.jpg" alt="商品の画像"></a>
+            </div>
+          </div>
+
+          <div class="wear">
+            <h3><span>WEAR</span></h3>
+            <div class="pr-img">
+              <a href="#"><img src="img/PR_wear.jpg" alt="商品の画像"></a>
+            </div>
           </div>
         </div>
-      <% end %>
-    <% end %>
-  </div>
-</div>
+      </div>
+    </section>
+
+    <!-- news -->
+    <section class="news" id="news">
+      <div class="container">
+        <h2>NEWS</h2>
+        <dl>
+          <div>
+            <dt>2023.05.20</dt>
+            <dd>TSURINCHUルアーを再入荷しました！</dd>
+          </div>
+          <div>
+            <dt>2023.05.17</dt>
+            <dd>6月18日(日)沖縄フィッシングショーに参加！</dd>
+          </div>
+          <div>
+            <dt>2023.05.10</dt>
+            <dd>TSURINCHU CUPについて</dd>
+          </div>
+          <div>
+            <dt>2023.05.03</dt>
+            <dd>詫びと訂正について</dd>
+          </div>
+        </dl>
+        <div class="button">
+          <a href="#">ニュース一覧を見る</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- shop -->
+    <section class="shop" id="shop">
+      <div class="container">
+        <h2>SHOP</h2>
+        <p>
+          TSURINCHUは、オンラインショップのみでの販売ですが、
+          沖縄県内のいくつかのお店でセレクトしていただいています。<br>
+          下記お店では、tsurinchuの商品を多く、取り扱っていただいています。<br>
+          ぜひご利用ください。
+        </p>
+      </div>
+      <iframe class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6481.445078251439!2d139.74859484681016!3d35.68383334034557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c0d02d8064d%3A0xd11a5f0b379e6db7!2z55qH5bGF!5e0!3m2!1sja!2sjp!4v1684897044776!5m2!1sja!2sjp"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <div class="shop_data">
+        <div class="container">
+          <dl class="shop_data_wrap">
+            <dt>K's Fishing</dt>
+            <dd>
+              <dl class="shop_detail">
+                <div>
+                  <dt>住所</dt>
+                  <dd>沖縄県那覇市◯-◯-◯</dd>
+                </div>
+                <div>
+                  <dt>営業時間</dt>
+                  <dd>10:00〜20:00</dd>
+                </div>
+                <div>
+                  <dt>定休日</dt>
+                  <dd>火曜日</dd>
+                </div>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </section>
