@@ -81,6 +81,11 @@ img {
     margin-top: 160px;
 }
 
+.product-h2 {
+    margin-bottom: 30px;
+}
+
+
 .products h2 {
     font-size: 32px;
     text-align: center;
@@ -186,7 +191,7 @@ img {
 }
 
 .shop_data .shop_data_wrap {
-    border: 1px solid #707070;
+    // border: 1px solid #707070;
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 20px;
@@ -233,7 +238,7 @@ img {
     }
 
     &-img {
-        height: 440px;
+        height: 250px;
         background-size: cover;
     }
 }
@@ -245,7 +250,7 @@ img {
     flex-direction: column;
 
     &-img {
-        height: 500px;
+        height: 250px;
         margin-top: 40px;
     }
 
