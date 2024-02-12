@@ -292,7 +292,12 @@ img {
 .cart {
     &-wrapper {
         width: 720px;
-        margin: 20px;
+
+        .product-cart-img {
+            height: 120px;
+            width: 155px;
+        }
+
 
         .card-body {
             display: flex;
@@ -362,6 +367,73 @@ a:active {
         &-img {
             height: auto;
             max-height: 700px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .cart {
+        &-wrapper {
+            width: 355px;
+
+            .product-cart-img {
+                height: 120px;
+                width: 130px;
+            }
+
+
+            .card-body {
+                display: flex;
+                align-items: center;
+                padding: 0;
+                width: 160px;
+
+                .card-product-name {
+                    font-size: 10px;
+                    padding: 1px;
+                    width: 105px;
+                }
+
+                .card-quantity {
+                    padding-left: 4px;
+                    font-size: 10px;
+                    width: 35px;
+                }
+
+
+                .card__total-price {
+                    padding-right: 11px;
+                    font-size: 10px;
+                }
+
+                .card__btn-trash {
+                    padding: 5px;
+
+                    a {
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        &__title {
+            font-size: 24px;
+            color: #4a4a4a;
+            letter-spacing: 1px;
+            margin: 85px 0 20px;
+        }
+
+        &__sub-total {
+            font-size: 16px;
+            color: #4a4a4a;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        &__empty {
+            font-size: 16px;
+            color: #4a4a4a;
+            letter-spacing: 1px;
         }
     }
 }
