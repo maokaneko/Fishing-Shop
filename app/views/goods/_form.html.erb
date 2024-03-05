@@ -1,0 +1,54 @@
+<%= form_with(model: good) do |form| %>
+  <% if good.errors.any? %>
+    <div style="color: red">
+      <h2>エラーが<%= pluralize(good.errors.count, "件") %> あります。下記の項目を修正してください。</h2>
+
+      <ul>
+        <% good.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class= "input-group mb-3 w-75">
+		<span class= "input-group-text">商品ID</span>
+		<%= form.text_field :goods_id, class: "form-control" %>
+  </div>
+
+	<div class="input-group mb-3 w-75">
+    <span class="input-group-text">商品名</span>
+    <%= form.text_field :title, class: "form-control" %>
+  </div>
+
+	<div class="input-group mb-3 w-75" style="height: 150px;">
+    <span class="input-group-text">説明</span>
+    <%= form.text_area :description, class: "form-control" %>
+  </div>
+
+  <div class="input-group mb-3 w-75">
+    <span class="input-group-text">画像URL</span>
+    <%= form.text_field :image_url, class: "form-control" %>
+  </div>
+
+  <div class="input-group mb-3 w-75">
+    <span class="input-group-text">価格（円）</span>
+    <%= form.text_field :price, class: "form-control" %>
+  </div>
+
+	<div class="input-group mb-3 w-75">
+    <span class="input-group-text">登録日</span>
+    <%= form.datetime_field :date, class: "form-control" %>
+  </div>
+
+	<div class="input-group mb-3 w-75">
+    <span class="input-group-text">カテゴリー</span>
+    <%= form.select :category, [ ["REEL", "REEL"], ["ROD", "ROD"], ["LURE", "LURE"], ["WEAR", "WEAR"]],
+                                id: "category", prompt: "選択してください", class: "form-control" %>
+  </div>
+
+
+  <div>
+    <%= form.submit  "商品登録", class: "btn btn-primary"%>
+  </div>
+<% end %>
