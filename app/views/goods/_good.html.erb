@@ -1,42 +1,29 @@
 <div id="<%= dom_id good %>">
-  <p>
-    <strong>Goods:</strong>
-    <%= good.goods_id %>
-  </p>
 
-  <p>
-    <strong>Title:</strong>
-    <%= good.title %>
-  </p>
+  <div class= "card">
+    <img src="<%= good.image_url %>" class= "card-img-top">
+    <div class= "card-body">
 
-  <p>
-    <strong>Description:</strong>
-    <%= good.description %>
-  </p>
+      <p>
+        <strong>商品名:</strong>
+        <%= good.title %>
+      </p>
 
-  <p>
-    <strong>Image url:</strong>
-    <%= good.image_url %>
-  </p>
+      <p>
+        <strong>商品説明:</strong>
+        <%= good.description %>
+      </p>
 
-  <p>
-    <strong>Price:</strong>
-    <%= good.price %>
-  </p>
+      <p>
+        <strong>値段:</strong>
+        <%= good.price %>
+      </p>
 
-  <p>
-    <strong>Date:</strong>
-    <%= good.date %>
-  </p>
-
-  <p>
-    <strong>Maker:</strong>
-    <%= good.maker %>
-  </p>
-
-  <p>
-    <strong>Category:</strong>
-    <%= good.category %>
-  </p>
+      <p>
+        <strong>Category:</strong>
+        <%= good.category %>
+      </p>
+    </div>
+  </div>
 
 </div>
