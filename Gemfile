@@ -82,3 +82,6 @@ end
 
  gem 'stripe'
 
+ #日本語化
+ gem 'rails-i18n', '~> 7.0', '>= 7.0.8'
+

@@ -1,0 +1,8 @@
+ja:
+  activerecord:
+    attributes:
+      good:
+        title: '商品名'
+        description: '説明文'
+        image_url: '画像URL'
+        price: '価格'
