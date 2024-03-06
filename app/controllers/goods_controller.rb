@@ -25,7 +25,7 @@ class GoodsController < ApplicationController
 
     respond_to do |format|
       if @good.save
-        format.html { redirect_to good_url(@good), notice: "Good was successfully created." }
+        format.html { redirect_to good_url(@good), notice: "商品が登録されました。" }
         format.json { render :show, status: :created, location: @good }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class GoodsController < ApplicationController
   def update
     respond_to do |format|
       if @good.update(good_params)
-        format.html { redirect_to good_url(@good), notice: "Good was successfully updated." }
+        format.html { redirect_to good_url(@good), notice: "商品が更新されました。" }
         format.json { render :show, status: :ok, location: @good }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class GoodsController < ApplicationController
     @good.destroy
 
     respond_to do |format|
-      format.html { redirect_to goods_url, notice: "Good was successfully destroyed." }
+      format.html { redirect_to goods_url, notice: "商品が削除されました。" }
       format.json { head :no_content }
     end
   end
