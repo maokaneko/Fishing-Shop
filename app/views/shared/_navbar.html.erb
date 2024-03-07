@@ -1,0 +1,31 @@
+<div class="wrapper">
+    <header class="header ">
+        <div class="container">
+            <h1 class="header-logo">
+                <%= link_to root_path, class: "navbar-brand" do %>
+                    TSURINCHU
+                <% end %>
+            </h1>
+            <nav class="gnav">
+                <ul class="gnav-list">
+
+                <li class="gnav-item">
+                  <%= link_to "新規登録", root_path %>
+                </li>
+
+                <li class="gnav-item">
+                  <%= link_to "商品一覧", goods_path %>
+                </li>
+
+                <li class="gnav-item">
+                    <%= link_to carts_path(@cart) do %>
+                        <i class="fas fa-shopping-cart"></i>
+                    <% end %>
+                </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+</div>
+
