@@ -21,6 +21,7 @@ TSURINCHUは、沖縄で釣りを楽しんでいる釣りんちゅ（釣り人�
 * puma
 * render
 
+
 ## ER 図
 <img width="810" alt="スクリーンショット 2024-02-12 23 09 34" src="https://github.com/maokaneko/TSURINCHU/assets/141111818/866225a0-d54f-4d98-8f0f-9eb696def59c">
 
